@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  background: #fffbfc;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+.main-header {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.main-header h1 span {
+  color: #f891a0;
+}
+
+.main-header p {
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.mainCard img {
+  height: 500px;
+}
+
+.mainTextCard {
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.linearGradientCard {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 176, 67, 1) 0%,
+    rgba(246, 158, 124, 1) 35%,
+    rgba(248, 143, 165, 1) 100%
+  );
+  /* margin: 2rem; */
+  width: 100%;
+  height: 350px;
+  margin: 0;
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.cardImages {
+  display: flex;
+  /* grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem; */
+  margin-bottom: 2rem;
+}
+
+.cardImages img {
+  height: 20%;
+}
+
+.effectOnHumanCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  background: #f1f1f1;
+}
+
+.effectOnHumanCard h3 {
+  margin-bottom: 2rem;
+}
+
+.effectOnHumanCard img {
+  height: 650px;
+  order: 2;
+}
+
+.effectOnHumanCard > div {
+  padding: 2rem;
+}
+
+.overallEffect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  background: #f1f1f1;
+}
+
+.overallEffect h3 {
+  margin-bottom: 2rem;
+}
+
+.overallEffect img {
+  height: 650px;
+}
+
+.overallEffect > div {
+  padding: 2rem;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  background: #f1f1f1;
+}
+
+.highlightSpan {
+  color: #f4aa57;
+}
+
+.card h3 {
+  margin-bottom: 2rem;
+}
+
+.card img {
+  height: 400px;
+}
+
+.card > div {
+  padding: 2rem;
+}
+
+.card:nth-child(even) img {
+  order: 2;
+}
+
+.btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+  .card {
+    display: block;
+  }
+  .effectOnHumanCard {
+    display: block;
+  }
+}
